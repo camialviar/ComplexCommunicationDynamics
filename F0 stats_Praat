@@ -1,0 +1,20 @@
+#This Praat script gets the F0 out of the speech files
+
+
+
+writeInfoLine: " tmin	tmax	f0mean	fmin	fmax	f0stdev"
+n = numberOfSelected ("Pitch")
+for i to n
+	pitch [i] = selected ("Pitch", i)
+endfor
+for i to n
+	selectObject: pitch [i]
+	tmin = Get start time
+	tmax = Get end time
+	mean = Get mean: tmin, tmax, "Hertz"
+	minimum = Get minimum: tmin, tmax, "Hertz", "Parabolic"
+	maximum = Get maximum: tmin, tmax, "Hertz", "Parabolic"
+	stdev = Get standard deviation: tmin, tmax, "Hertz"
+	
+	appendInfoLine: fixed$ (tmin, 6), "	", fixed$ (tmax, 6), "		", fixed$ (mean, 2), "	", fixed$ (minimum, 2), "		", fixed$ (maximum, 2), "	", fixed$ (stdev, 2)
+endfor
