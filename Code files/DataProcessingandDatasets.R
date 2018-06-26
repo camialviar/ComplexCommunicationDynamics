@@ -22,7 +22,7 @@ fls = list.files('.',pattern='txt') # '.' = current directory; pattern matches c
 
 #Plotting the slides time series to decide the threshold for each speaker
 
-dat = read.table(fl[1],header=T) #Reading the files. Plotting and eye-balling parameters so we do it one by one
+dat = read.table(fls[30],header=T) #Reading the files. Plotting and eye-balling parameters so we do it one by one
 ts_slides = scale(dat$SlidesBmag)
 plot(ts_slides, type = 'l', ylab = 'Total Pixel Change in the Slide Area', 
        cex.lab = 1.2, xlab='Time (min)')
