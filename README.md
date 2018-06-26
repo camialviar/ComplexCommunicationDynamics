@@ -5,4 +5,4 @@ The "Data files" folder contains the aggregated datasets, as well as some of the
 
 The "Code files" folder contains the two R scripts: "Data Processing and Datasets" that contains the code we used for data prepration; and "Data Analyses" that contains the scripts we used to perform data analyses. This folder also includes two Praat Scripts. Please note that we used DeJong and Wempe's Praat script to calculate speech rate. Their script can be found here: https://github.com/FieldDB/Praat-Scripts/blob/master/praat-script-syllable-nuclei-v2file.praat
 
-The "Individual Figures" folder contains the figures showcasing the individual speaker trends for each of the dependent variables.
+The "Individual Figures" folder contains the figures showcasing the individual speaker trends for each of the dependent variables for the interested reader.
