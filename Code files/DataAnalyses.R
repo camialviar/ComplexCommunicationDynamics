@@ -93,7 +93,7 @@ for (i in 1:300) {
 plot(PcaModel$scores[,1],PcaModel$scores[,2],pch=speakerId, col=cols, # Plotting the data projected into the first two components
      xlab = "Component 1", ylab="Component 2", cex.lab=1.2)
 
-#Plotting the each speaker's time series for each DV
+######## Plotting the each speaker's time series for each DV
 dev.off()
 par(mfrow=c(6,5))
 par(mar = c(0.8, 2, 0, 0.5), oma = c(4, 3, 0.8, 0.5))
